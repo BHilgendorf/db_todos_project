@@ -59,15 +59,15 @@ end
 def error_for_list_name(name)
   if @storage.all_lists.any? { |list| list[:name] == name }
     'List name must be unique.'
-  elsif !(1..100).cover?(name.size)
-    'List name must be between 1 and 100 characters.'
+  elsif !(1..50).cover?(name.size)
+    'List name must be between 1 and 50 characters.'
   end
 end
 
 # Return error message if item name is invalid. Return nil if valid
 def error_for_todo(name)
-  if !(1..100).cover?(name.size)
-    'Todo name must be between 1 and 100 characters.'
+  if !(1..50).cover?(name.size)
+    'Todo name must be between 1 and 50 characters.'
   end
 end
 

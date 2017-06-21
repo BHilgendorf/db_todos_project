@@ -1,6 +1,6 @@
 CREATE TABLE lists(
   id serial PRIMARY KEY,
-  name varchar(30) UNIQUE NOT NULL
+  name varchar(50) UNIQUE NOT NULL
 );
 
 
